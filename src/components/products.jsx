@@ -56,7 +56,7 @@ export default function Products() {
             <div
               onClick={() => handleLikeProduct(product.id)}
               className={
-                likeState[product.id] ? "like-product LikeOn" : "like-product"
+                likeState[product.id] ? "like-product heartOn" : "like-product"
               }
             >
               <i className="fa-regular fa-heart"></i>
