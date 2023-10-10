@@ -10,6 +10,8 @@ body {
   text-decoration: none;
   list-style-type: none;
   text-transform: capitalize;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .home-page {
@@ -65,7 +67,8 @@ body {
 }
 
 .select-categories {
-  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* Untuk peramban berbasis WebKit (seperti Chrome dan Safari) */ /* Untuk menghindari seleksi teks */
+  touch-action: manipulation;
   height: 100%;
   font-size: 13px;
   color: #cfcececb;
@@ -89,7 +92,6 @@ body {
 
 .category-list {
   width: 165px;
-  user-select: none;
   height: 0;
   padding: 0 10px;
   z-index: 99;
@@ -232,6 +234,9 @@ body {
 }
 
 .card-products {
+  -webkit-tap-highlight-color: transparent; /* Untuk peramban berbasis WebKit (seperti Chrome dan Safari) */
+  /* Untuk menghindari seleksi teks */
+  touch-action: manipulation;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -244,6 +249,8 @@ body {
 }
 
 .like-product {
+  -webkit-tap-highlight-color: transparent; /* Untuk peramban berbasis WebKit (seperti Chrome dan Safari) */ /* Untuk menghindari seleksi teks */
+  touch-action: manipulation;
   z-index: 99;
   position: absolute;
   display: flex;
@@ -408,7 +415,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  top: 20px;
+  top: 15px;
   left: 20px;
   z-index: 99;
   width: 50px;
@@ -425,7 +432,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  top: 20px;
+  top: 15px;
   left: 20px;
   z-index: 99;
   width: 50px;
@@ -446,6 +453,9 @@ body {
 }
 
 .troli-inDetail {
+  -webkit-tap-highlight-color: transparent; /* Untuk peramban berbasis WebKit (seperti Chrome dan Safari) */
+  /* Untuk menghindari seleksi teks */
+  touch-action: manipulation;
   width: 50px;
   height: 50px;
   display: flex;
@@ -483,6 +493,10 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.back-to-home::after {
+  content: "Back to Home";
 }
 
 .desc-detail {
@@ -601,6 +615,8 @@ body {
 
 /* TROLI COMPONENT */
 .troli-component {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
   position: fixed;
   z-index: 999;
   width: 500px;
@@ -829,6 +845,32 @@ body {
     border-radius: 50%;
     font-size: 12px;
   }
+  /* .like-product {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    left: 20px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.116);
+    transition: all 0.1s ease-in-out;
+  } */
+
+  .LikeOn {
+    color: #ff3a3a;
+  }
+
+  /* .like-product:hover {
+    color: inherit;
+  } */
 
   .img-products {
     height: 180px;
@@ -1043,10 +1085,15 @@ body {
 
   .back-to-home {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 0px;
-    /* border: 1px solid blue;*/
+    /* border: 1px solid blue; */
     gap: 10px;
+    width: 80px;
+  }
+
+  .back-to-home::after {
+    content: "Back";
   }
 
   .desc-detail {

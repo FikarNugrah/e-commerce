@@ -44,6 +44,7 @@ export default function Header() {
         <div className="src-area">
           <div className="search-column">
             <input
+              id="src"
               onClick={() => alert("Maaf, fitur ini belum tersedia")}
               type="text"
               placeholder="Search Product"
@@ -69,7 +70,9 @@ export default function Header() {
             </div>
           </div>
           <div className="search-icon">
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <label htmlFor="src">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </label>
           </div>
         </div>
         <div className="header-fiture">

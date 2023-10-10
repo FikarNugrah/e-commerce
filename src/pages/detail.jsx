@@ -75,7 +75,6 @@ export default function Detail() {
           <div className="desc-area">
             <div onClick={handleBackToHome} className="back-to-home">
               <i className="fa-solid fa-arrow-left-long"></i>
-              <p>Back to Home</p>
             </div>
             <div className="desc-detail">
               <p className="category-product-detail">
@@ -124,7 +123,10 @@ export default function Detail() {
                 </div>
               </div>
               <div className="pre-price-product">${productDetail.price}</div>
-              <button className="pre-add-troli">
+              <button
+                className="pre-add-troli"
+                onClick={() => alert("Maaf, fitur ini belum tersedia")}
+              >
                 Check Out <i className="fa-solid fa-cart-shopping"></i>
               </button>
             </div>
