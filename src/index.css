@@ -868,9 +868,9 @@ body {
     color: #ff3a3a;
   }
 
-  /* .like-product:hover {
+  .like-product:hover {
     color: inherit;
-  } */
+  }
 
   .img-products {
     height: 180px;
