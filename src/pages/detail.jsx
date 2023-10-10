@@ -35,8 +35,8 @@ export default function Detail() {
 
   const handleBackToHome = () => {
     dispatch(toggleTroliOff());
-    window.history.replaceState(null, null, "/");
-    navigate("/");
+    window.history.replaceState(null, null, "/e-commerce/");
+    navigate("/e-commerce/");
   };
 
   const handleLikeProduct = (productId) => {

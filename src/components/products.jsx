@@ -35,7 +35,7 @@ export default function Products() {
   function handleDetailProduct(id) {
     dispatch(toFalse());
     dispatch(toggleTroliOff());
-    navigate(`/detail/${id}`);
+    navigate(`/e-commerce/detail/${id}`);
     // console.log(id);
   }
 
