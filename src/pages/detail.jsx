@@ -73,7 +73,11 @@ export default function Detail() {
             >
               <i className="fa-solid fa-cart-shopping"></i>
             </div>
-            <img src={productDetail.image} alt="" />
+            {productDetail ? (
+              <img src={productDetail.image} alt="" />
+            ) : (
+              <p>...</p>
+            )}
           </div>
           <div className="desc-area">
             <div onClick={handleBackToHome} className="back-to-home">
