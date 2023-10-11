@@ -211,7 +211,7 @@ body {
 }
 
 .iklan img {
-  width: 45%;
+  width: 380px;
   mix-blend-mode: multiply;
 }
 
@@ -283,7 +283,7 @@ body {
 }
 
 .img-products img {
-  width: 70%;
+  width: 130px;
   mix-blend-mode: multiply;
 }
 
@@ -402,7 +402,7 @@ body {
 }
 
 .img-area img {
-  width: 40%;
+  width: 200px;
   mix-blend-mode: multiply;
 }
 
@@ -563,7 +563,7 @@ body {
 }
 
 .img-detail img {
-  width: 50%;
+  width: 25px;
   mix-blend-mode: multiply;
 }
 
