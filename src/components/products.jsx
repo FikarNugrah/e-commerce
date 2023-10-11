@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
   getProducts,
   getProductsCategories,
@@ -22,8 +22,6 @@ export default function Products() {
     ? useSelector((state) => state.products.dataFromCategory)
     : useSelector((state) => state.products.data);
 
-  // console.log(productsInTroli);
-
   useEffect(() => {
     if (!productsComponent) {
       dispatch(getProducts());
@@ -36,13 +34,11 @@ export default function Products() {
     dispatch(toFalse());
     dispatch(toggleTroliOff());
     navigate(`/e-commerce/detail/${id}`);
-    // console.log(id);
   }
 
   const handleLikeProduct = (productId) => {
     dispatch(handleLikeState(productId));
     dispatch(likeProduct(productId));
-    // console.log(productId);
     if (likeState[productId]) {
       dispatch(deleteProductInTroli(productId));
     }
@@ -91,12 +87,6 @@ export default function Products() {
                   ${product.price}
                 </p>
                 <p className="price">${(product.price * 0.9).toFixed(2)}</p>
-              </div>
-              <div
-                onClick={() => alert("Maaf, fitur ini belum tersedia")}
-                className="add-count"
-              >
-                +
               </div>
             </div>
           </div>

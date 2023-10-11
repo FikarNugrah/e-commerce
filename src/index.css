@@ -418,7 +418,6 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /* background: #ff611e; */
   background: radial-gradient(circle, #ff804a 0%, #ff3a3a 100%);
   color: white;
   transition: all 0.2s ease-in-out;
@@ -451,9 +450,6 @@ body {
 }
 
 .troli-inDetail {
-  -webkit-tap-highlight-color: transparent; /* Untuk peramban berbasis WebKit (seperti Chrome dan Safari) */
-  /* Untuk menghindari seleksi teks */
-  touch-action: manipulation;
   width: 50px;
   height: 50px;
   display: flex;
@@ -613,8 +609,6 @@ body {
 
 /* TROLI COMPONENT */
 .troli-component {
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
   position: fixed;
   z-index: 999;
   width: 500px;

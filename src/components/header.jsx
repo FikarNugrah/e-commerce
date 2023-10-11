@@ -13,7 +13,6 @@ import {
 export default function Header() {
   const dispatch = useDispatch();
   const categories = useSelector((state) => state.products.categories);
-  // console.log(categories);
   const toggleCate = useSelector((state) => state.products.toggleCate);
 
   useEffect(() => {
@@ -24,10 +23,9 @@ export default function Header() {
     dispatch(toFalse());
     dispatch(switchProductComponent());
     dispatch(getProductsCategories(category));
-    // console.log(category);
   }
 
-  const switchComponent = (event) => {
+  const switchComponent = () => {
     dispatch(toFalse());
     dispatch(switchProduct());
   };

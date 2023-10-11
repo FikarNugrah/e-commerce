@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   toggleTroliOff,
   deleteProductInTroli,
-  handleLikeState,
   updateLikeStateOnProductDelete,
 } from "../slices/productSlice";
 
@@ -14,7 +13,6 @@ export default function Troli() {
     (state) => state.products.productsInTroli
   );
 
-  // console.log(productsInTroli);
   function handleDeleteProductInTroli(id) {
     dispatch(deleteProductInTroli(id));
     dispatch(updateLikeStateOnProductDelete(id));

@@ -6,7 +6,6 @@ export default function Iklan() {
   const products = useSelector((state) => state.products.data);
   const dispatch = useDispatch();
   const product = products.find((dataProduct) => dataProduct.id === 14);
-  // console.log(product);
 
   useEffect(() => {
     dispatch(getProducts());

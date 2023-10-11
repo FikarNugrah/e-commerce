@@ -19,7 +19,6 @@ export default function Detail() {
   const productDetail = useSelector((state) =>
     state.products.data.find((product) => product.id == id)
   );
-  // console.log(productDetail);
 
   useEffect(() => {
     dispatch(getProducts());
@@ -47,6 +46,10 @@ export default function Detail() {
       dispatch(deleteProductInTroli(productId));
     }
   };
+
+  const stars = Array(5)
+    .fill()
+    .map((_, index) => <i key={index} className="fa-solid fa-star"></i>);
 
   return (
     <>
@@ -82,14 +85,7 @@ export default function Detail() {
               </p>
               <p className="title-detail-product">{productDetail.title}</p>
               <div className="rate-area">
-                <div className="star-rate">
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                </div>
-                |
+                <div className="star-rate">{stars}</div>|
                 <p>
                   {productDetail.rating.rate} ( {productDetail.rating.count}{" "}
                   review )

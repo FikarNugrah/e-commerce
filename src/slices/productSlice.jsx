@@ -7,7 +7,6 @@ export const getProducts = createAsyncThunk(
   async () => {
     try {
       const resp = await axios.get("https://fakestoreapi.com/products");
-      // console.log(resp.data);
       return resp.data;
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -22,7 +21,6 @@ export const getProductsCategories = createAsyncThunk(
       const resp = await axios.get(
         `https://fakestoreapi.com/products/category/${category}`
       );
-      // console.log("category", resp.data);
       return resp.data;
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -38,7 +36,6 @@ export const getCategories = createAsyncThunk(
       const resp = await axios.get(
         "https://fakestoreapi.com/products/categories"
       );
-      // console.log(resp.data);
       return resp.data;
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -151,12 +148,3 @@ export const {
 } = productsSlice.actions;
 
 export default productsSlice.reducer;
-
-// .addCase(getDetailProduct.fulfilled, (state, action) => {
-//   const i = state.data.findIndex(
-//     (product) => product.id === action.payload.id
-//   );
-//   if (i !== -1) {
-//     state.data[i] = action.payload;
-//   }
-// });
