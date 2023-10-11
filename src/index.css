@@ -800,10 +800,20 @@ body {
 
   .iklan-area {
     width: 100%;
-    height: 200px;
+    height: 150px;
+    /* border: 1px solid red; */
   }
+
+  .iklan {
+    width: 100%;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+  }
+
   .iklan p {
-    font-size: 18px;
+    width: 150px;
+
+    font-size: 15px;
   }
 
   .iklan img {
