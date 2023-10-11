@@ -76,7 +76,7 @@ export default function Detail() {
             {productDetail ? (
               <img src={productDetail.image} alt="" />
             ) : (
-              <p>...</p>
+              <p style={{ color: "black" }}>...</p>
             )}
           </div>
           <div className="desc-area">

@@ -61,10 +61,10 @@ export default function Products() {
               onClick={() => handleDetailProduct(product.id)}
               className="img-products"
             >
-              {products ? (
+              {product.image ? (
                 <img src={product.image} alt="" />
               ) : (
-                <p style={{ color: "black", textAlign: "center" }}>...</p>
+                <p style={{ color: "black" }}>...</p>
               )}
             </div>
             <div className="desc-products">

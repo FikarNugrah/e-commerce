@@ -109,6 +109,10 @@ const productsSlice = createSlice({
       state.productsInTroli = state.productsInTroli.filter(
         (product) => product.id !== productIdToDelete
       );
+      localStorage.setItem(
+        "productsInTroli",
+        JSON.stringify(state.productsInTroli)
+      );
     },
     handleLikeState: (state, action) => {
       const productId = action.payload;
