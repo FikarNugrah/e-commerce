@@ -44,21 +44,6 @@ export const getCategories = createAsyncThunk(
   }
 );
 
-export const getDetailProduct = createAsyncThunk(
-  "products/getDetailProduct",
-  async (id) => {
-    console.log("from slice", id);
-    try {
-      const resp = await axios.get(`https://fakestoreapi.com/products/${id}`);
-      console.log(resp.data);
-      return resp.data;
-    } catch (error) {
-      console.log("Error fetching data:", error);
-      throw error;
-    }
-  }
-);
-
 //REDUCER
 const productsSlice = createSlice({
   name: "products",
