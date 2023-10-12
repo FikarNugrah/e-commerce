@@ -110,6 +110,7 @@ const productsSlice = createSlice({
     updateLikeStateOnProductDelete: (state, action) => {
       const productId = action.payload;
       state.likeState[productId] = false;
+      localStorage.setItem("likeState", JSON.stringify(state.likeState));
     },
   },
   extraReducers: (builder) => {
