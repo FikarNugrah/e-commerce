@@ -89,11 +89,7 @@ export default function Detail() {
               </p>
               <p className="title-detail-product">{productDetail.title}</p>
               <div className="rate-area">
-                <div className="star-rate">{stars}</div>|
-                <p>
-                  {productDetail.rating.rate} ( {productDetail.rating.count}{" "}
-                  review )
-                </p>
+                <div className="star-rate">{stars}</div>|<p>review )</p>
               </div>
             </div>
             <p className="description-detail-product">

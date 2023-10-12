@@ -50,14 +50,17 @@ export default function Troli() {
                       <p
                         style={{
                           textDecoration: "line-through",
-                          color: "#c2bfbf",
+                          color: "black",
                         }}
                         className="price-product-inTroli"
                       >
                         ${product.price}
                       </p>
 
-                      <p className="price-product-inTroli">
+                      <p
+                        className="price-product-inTroli"
+                        style={{ color: "red" }}
+                      >
                         ${(product.price * 0.9).toFixed(2)}
                       </p>
                     </div>
