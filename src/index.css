@@ -337,8 +337,8 @@ body {
 }
 
 .price {
-  color: red;
-  font-weight: 500;
+  color: #ff3a3a;
+  font-weight: 400;
 }
 
 .add-count {
@@ -584,6 +584,11 @@ body {
 
 .pre-price-product {
   font-size: 30px;
+}
+
+.price-detail {
+  font-size: 23px;
+  color: #ff3a3a;
 }
 
 .pre-add-troli {

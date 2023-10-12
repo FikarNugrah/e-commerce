@@ -120,7 +120,17 @@ export default function Detail() {
                   </p>
                 </div>
               </div>
-              <div className="pre-price-product">${productDetail.price}</div>
+              <div className="price-area">
+                <p
+                  style={{ textDecoration: "line-through", color: "black" }}
+                  className="price-detail"
+                >
+                  ${productDetail.price}
+                </p>
+                <p className="price-detail">
+                  ${(productDetail.price * 0.9).toFixed(2)}
+                </p>
+              </div>
               <button
                 className="pre-add-troli"
                 onClick={() => alert("Maaf, fitur ini belum tersedia")}
