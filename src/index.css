@@ -692,7 +692,7 @@ body {
   position: absolute;
   width: auto;
   left: -20px;
-  /* border: 2px solid red; */
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   height: 100vh;
