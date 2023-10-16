@@ -308,12 +308,13 @@ body {
   font-size: 14px;
   display: flex;
   /* border: 2px solid red; */
-  align-items: center;
   gap: 5px;
+  align-items: center;
 }
 
 .fa-star {
   font-size: 13px;
+  margin-bottom: 2px;
   /* border: 1px solid red; */
   color: rgb(255, 217, 0);
 }
@@ -325,7 +326,6 @@ body {
 .count {
   font-weight: 500;
   font-size: 13px;
-  padding: 1px 4px;
   background-color: #ebe7e7;
   border-radius: 5px;
   color: #555353;
@@ -903,10 +903,12 @@ body {
     font-size: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
+    /* border: 1px solid red; */
   }
 
   .fa-star {
+    /* font-size: 10px; */
     color: rgb(255, 217, 0);
   }
 
@@ -917,7 +919,6 @@ body {
   .count {
     font-weight: 500;
     font-size: 10px;
-    padding: 1px 4px;
     background-color: #ebe7e7;
     border-radius: 5px;
     color: #555353;
