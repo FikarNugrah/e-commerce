@@ -78,10 +78,7 @@ export default function Products() {
               <p className="categories">{product.category}</p>
               <p className="rate">
                 <i className="fa-solid fa-star"></i>
-                <span style={{ height: "19px" }}>
-                  {product.rating.rate}
-                </span>{" "}
-                <span className="or">|</span>{" "}
+                <span>{product.rating.rate}</span> <span className="or">|</span>{" "}
                 <span className="count">{product.rating.count} Rv</span>
               </p>
               <div className="price-area">
