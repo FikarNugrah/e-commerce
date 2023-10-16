@@ -619,7 +619,7 @@ body {
 /* TROLI COMPONENT */
 .troli-component {
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   width: 500px;
   height: 100vh;
   right: -530px;
@@ -928,6 +928,10 @@ body {
     gap: 10px;
   }
 
+  .price-detail {
+    font-size: 18px;
+  }
+
   .price {
     font-size: 12px;
     font-weight: 500;
@@ -1141,7 +1145,7 @@ body {
 
   .pre-add-troli {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
