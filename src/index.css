@@ -326,6 +326,7 @@ body {
 .count {
   font-weight: 500;
   font-size: 13px;
+  padding: 1px 4px;
   background-color: #ebe7e7;
   border-radius: 5px;
   color: #555353;
